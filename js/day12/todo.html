@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO Project</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="w-[80vw] h-[80vh] container mx-auto">
+        <h1 class="text-3xl font-bold underline">
+            TODO Project
+        </h1>
+       <form id="form">
+            <input id="input" type="text" placeholder="Enter your todo" class="border-2 
+            border-black rounded-md px-2 py-1">
+            <button id="btn" type="submit" class="border-2 border-black rounded-md px-2 py-1
+             bg-green-600 hover:bg-green-900 hover:border-green-900">Add</button>
+       </form>
+       <ol class="grid grid-cols-5" id="ol">
+       </ol>
+    </div>
+    <script>
+        
+        let form = document.getElementById("form");
+        let input = document.getElementById("input");
+        let btn = document.getElementById("btn");
+        let ol = document.getElementById("ol");
+
+        form.addEventListener("submit", (e)=>{
+            e.preventDefault();
+            let li = document.createElement("li");
+            li.innerHTML = `
+                <span>${input.value}</span>
+                <button class="bg-red-600 hover:bg-red-900 
+                hover:border-red-900 border-2 border-black px-2 
+                py-1 rounded-md" onClick="this.parentNode.remove()">Delete</button>`
+            ol.appendChild(li);
+            input.value = "";
+        })
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,17 @@
+*{
+    background-color: black;
+    color: white;
+}
+#saugat{
+    color: aqua;
+}
+.saugat{
+    color: red;
+}
+a{
+    color: blue;
+}
+
+a,  h6,  p,  pre {
+    font-size: 40px;
+}

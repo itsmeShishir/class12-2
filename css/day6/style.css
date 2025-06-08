@@ -1,0 +1,32 @@
+.max{
+    background-color: rgb(251, 255, 0);
+}
+.min{
+    background-color: rgb(255, 0, 0);
+}
+@media screen and (max-width: 600px) {
+    .max{
+        max-width: 700px;
+        background-color: aqua;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .min{
+        min-width: 700px;
+        background-color: blue;
+    }
+}
+.one{
+    background-image: url("https://images.unsplash.com/photo-1744315900478-fa44dc6a4e89?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8");
+    height: 200vh;
+    background-color: redx;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:auto;
+    background-attachment: fixed;
+    /* background: url("./assets/elijah-pilchard-5QHUhsXPNeM-unsplash.jpg") no-repeat center center fixed; */
+}
+img{
+    object-fit:fill;
+}

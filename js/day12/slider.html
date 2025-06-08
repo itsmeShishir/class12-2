@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Project</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div
+        class="w-[80vw] h-[80vh] container mx-auto ">
+        <button onclick="next()">
+            Next
+        </button>
+        <img src="" alt="" id="img" class="w-[75vw] h-[75vh] object-cover">
+        <button onclick="prev()">
+            Prev
+        </button>
+    </div>
+    <script>
+        const images = [
+            "https://images.unsplash.com/photo-1748520492292-a5f75429e948?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8",
+            "https://images.unsplash.com/photo-1748630312862-fbbd301ed17f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D", 
+            "https://images.unsplash.com/photo-1748199625285-622076001599?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D",
+            "https://images.unsplash.com/photo-1746483965479-60900adf61b1?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyN3x8fGVufDB8fHx8fA%3D%3D"
+        ]
+        let currentindex = 0;
+        let img = document.getElementById("img")
+        img.src = images[currentindex]
+
+        function next(){
+            currentindex = (currentindex + 1) % images.length;
+            img.src = images[currentindex]
+        }
+
+        function prev(){
+            currentindex = (currentindex - 1 + images.length) % images.length;
+            img.src = images[currentindex]
+        }
+    </script>
+    
+</body>
+</html>

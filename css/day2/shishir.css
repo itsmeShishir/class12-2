@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+@font-face {
+    font-family: "shishir" ;
+    src: url("./ShadowsIntoLight-Regular.ttf");
+}
+
+.title{
+    background-color: red;
+    background-color: rgb(4, 146, 255);
+    background-color: rgba(4, 146, 255, 0.999);
+    font-family: "Shadows Into Light";
+
+    text-align: right;
+    color: antiquewhite;
+    color: #00e1ff;
+    color: hsl(49, 100%, 50%);
+}
+.description{
+    font-size: 16px;
+    font-weight: 900;
+    font-style: normal;
+    font-family: "Edu AU VIC WA NT Arrows";
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+    word-break: normal;
+    word-break: break-all;
+    letter-spacing: 4px;
+    word-spacing: 40px;
+
+}
+a{
+    text-decoration: none;
+}
+.one{
+    font-family: "shishir";
+}
+
+
+/* colors type 
+(Value)
+ Named Colors-> red, greed, blue, yellow, black, purple
+ RGB ->  0-255
+ RGBA -> Alfa -> 0 - 0.999,
+ hexa decimal color -> #ffffff
+ hsl -> hue, saturation and lightness
+*/
+
+/* Text -> 
+font-size: 18px;
+font-width: 100 - 900
+font-style: normal(default) , italic
+text-align: center , left(default), right, justify
+ */
+

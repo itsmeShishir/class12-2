@@ -1,0 +1,26 @@
+÷*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.child{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: 30px;
+}
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; default */
+    /* flex-direction: column; */
+    justify-content: space-evenly;/* y */
+    justify-content: space-between;/* y */
+    justify-content: space-around;/* y */
+    justify-content: center;/* y */
+    justify-content: start;/* y */
+    gap:500px;
+    align-items: self-end;/* x */
+    align-self: start;
+    height: 100vh;
+}
