@@ -5,6 +5,8 @@ import Counter from "./useState/Counter";
 // import ApiFetch from "./useEffect/ApiFetch";
 import ChangeColor from "./useRef/ChangeColor";
 import SliderPage from "./useReducer/SliderPage";
+import RerenderPage from "./useMemo/rerenderPage";
+import JustCallBack from "./useCallback/JustCallBack";
 
 function LearnHooks() {
   return <div>
@@ -14,6 +16,8 @@ function LearnHooks() {
     <ApiFetch /> */}
     <ChangeColor />
     <SliderPage />
+    <RerenderPage />
+    <JustCallBack />
   </div>;
 }
 
