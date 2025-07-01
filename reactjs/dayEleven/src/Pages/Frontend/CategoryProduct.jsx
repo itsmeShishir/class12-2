@@ -4,7 +4,10 @@ import { FaCartArrowDown } from "react-icons/fa";
 import { CiStar } from "react-icons/ci";
 // import ApiFetch from "../../learn/CustomHook/ApiFetch";
 import { useQuery } from "@tanstack/react-query";
-function ProductsPage() {
+import { useParams } from "react-router-dom";
+
+function CategoryProduct() {
+    const { id } = useParams();
 
     // const [data, SetData] = useState([]);
     // const [loading, SetLoading] = useState(true);
@@ -31,9 +34,9 @@ function ProductsPage() {
     // }
 
     const { isPending, error, data } = useQuery({
-    queryKey: ['productsData'],
+    queryKey: ['SingleCategoryData'],
     queryFn: () =>
-      fetch('https://ecommerce.bhandarishishir.com.np/api/product/').then((res) =>
+      fetch(`https://ecommerce.bhandarishishir.com.np/api/relatedProduct/${id}`).then((res) =>
         res.json(),
       ),
   })
@@ -213,4 +216,4 @@ function ProductsPage() {
   </>;
 }
 
-export default ProductsPage;
+export default CategoryProduct;
