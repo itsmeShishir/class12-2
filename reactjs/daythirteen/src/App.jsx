@@ -16,6 +16,7 @@ import PageNotFound from "./Pages/ErrroPage/PageNotFound";
 import { BiArrowToTop } from "react-icons/bi";
 import CategoryProduct from "./Pages/Frontend/CategoryProduct";
 import TodoApp from "./learn/TodoApp";
+import CounterRedux from "./learn/Redux/CounterRedux";
 
 function App() {
   const ref = useRef();
@@ -37,6 +38,7 @@ function App() {
       </Route>
       <Route path="/learn" element={<LearnHooks />} />
       <Route path="/todo" element={<TodoApp />} />
+      <Route path="/redux" element={<CounterRedux />} />
       
       {/* Auth */}
       <Route path="login" element={<AuthMainPage/>}>

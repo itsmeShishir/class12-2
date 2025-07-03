@@ -9,17 +9,22 @@ import {
 import INcDEcContext from './learn/ContextApi/INcDEcContext.jsx';
 import LightAndDark from './learn/ContextApi/LightAndDark.jsx';
 import ToDoContext from './learn/ContextApi/ToDoContext.jsx';
+import { Provider } from "react-redux";
+import { store } from './learn/Redux/store.js';
+
 const clients = new QueryClient()
 createRoot(document.getElementById('root')).render(
-  < LightAndDark>
-    <ToDoContext >
-      <QueryClientProvider client={clients}>
-        <INcDEcContext >
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-        </INcDEcContext>
-      </QueryClientProvider>
-    </ToDoContext >
-  </LightAndDark>
+  <Provider store = {store}>
+    <LightAndDark>
+      <ToDoContext >
+        <QueryClientProvider client={clients}>
+          <INcDEcContext >
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+          </INcDEcContext>
+        </QueryClientProvider>
+      </ToDoContext >
+    </LightAndDark>
+  </Provider>
 )

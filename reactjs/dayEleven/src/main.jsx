@@ -10,7 +10,7 @@ import INcDEcContext from './learn/ContextApi/INcDEcContext.jsx';
 import LightAndDark from './learn/ContextApi/LightAndDark.jsx';
 const clients = new QueryClient()
 createRoot(document.getElementById('root')).render(
-  < LightAndDark>
+  <LightAndDark>
     <QueryClientProvider client={clients}>
       <INcDEcContext >
       <BrowserRouter>
