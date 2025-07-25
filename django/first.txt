@@ -1,0 +1,15 @@
+win. -> python --version
+mac. -> python3 --version
+
+# dir -> win -> django 
+# env -> pip install virtualenv
+
+# cmd -> python -m venv env
+      -> win : env/Scripts/activate
+      -> source env/bin/activate 
+      -> (env) shishirbhandari cmd
+      -> pip install django Pillow
+      -> pip install -r requirements.txt
+      -> python3 manage.py runserver
+      -> 
+
